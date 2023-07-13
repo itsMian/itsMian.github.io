@@ -10,6 +10,200 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 	<script src="index.js"></script>
 	<script src="//use.edgefonts.net/changa-one.js"></script>
+	
+	<style>
+#skill h1, #contact h1 {
+	font-family: 'superhelio _regular', sans-serif;
+	color: #FEE3D4;
+}
+
+body {
+	background-size: 100%;
+	color: white;
+    background-color: #03031A;
+    background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjAwJyBoZWlnaHQ9JzYwMCcgdmlld0JveD0nMCAwIDE1MCAxNTAnPgo8ZmlsdGVyIGlkPSdpJyB4PScwJyB5PScwJz4KCTxmZUNvbG9yTWF0cml4IHR5cGU9J21hdHJpeCcgdmFsdWVzPScxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAwIDAnIC8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgYmFzZUZyZXF1ZW5jeT0nLjcnIHJlc3VsdD0nZnV6eicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJPGZlQ29tcG9zaXRlIGluPSdTb3VyY2VHcmFwaGljJyBpbjI9J2Z1enonIG9wZXJhdG9yPSdhcml0aG1ldGljJyBrMT0nMCcgazI9JzEnIGszPSctNzMnIGs0PScuMDEnIC8+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjMDMwMzFhJy8+CjxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjZmZmZmZmJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPHJlY3QgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyMwMzAzMWEnIGZpbHRlcj0ndXJsKCNpKScgb3BhY2l0eT0nMScvPgo8L3N2Zz4=');
+}
+
+img {
+	width:100%;
+	height:100%;
+}
+
+.photo {
+	width:200px;
+	height:200px;
+	margin: 0 auto;
+}
+
+.navbar {
+	background-color: #FEE3D4;
+	font-size: 120%;
+	padding: 20px 0;
+}
+
+.navbar a {
+	font-family: 'Fipps', sans-serif;
+	color: black;
+	padding: 0 16px;
+}
+
+.pikachu-gif > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 174px;
+	max-height: 154.92px;
+}
+
+.first-content {
+	display: absolute;
+	font-family: 'superhelio _extended', sans-serif;
+	font-size: 24px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #FEE3D4;
+	margin: 250px 0;
+}
+
+.grid-container {
+	display: grid;
+	background-color: #FEE3D4;
+	gap: 10px;
+}
+
+.grid-container > div {
+	color: black;
+	background-color: #FEE3D4;
+	text-align: center;
+}
+
+#about {
+	font-family: 'superhelio _regular', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1520px;
+}
+
+.habit-container {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	background-color: purple;
+	padding: 20px 0;
+}
+
+.habit-container img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	transition: transform 0.5s;
+}
+
+.habit-container img:hover {
+	transform: scale(1.2);	
+}
+
+#projects {
+	font-family: 'superhelio _regular', sans-serif;
+	color: white;
+	display: absolute;
+	align-items: center;
+	justify-content: center;
+	max-width: 1520px;
+	margin: 200px auto;
+}
+
+#skill {
+	font-family: 'superhelio _regular', sans-serif;
+	display: absolute;
+	align-items: center;
+	justify-content: center;
+	max-width: 1520px;
+	margin: 200px auto;
+	color: white;
+}
+
+.proj-left {
+	display: grid;
+	grid-template-columns: 300px auto;
+	gap: 10px;
+}
+
+.proj-right {
+	display: grid;
+	grid-template-columns: auto 300px;
+	gap: 10px;
+}
+
+.project3 img {
+	display: absolute;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.icon-grid {
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	gap: 10px;
+}
+
+.icon-grid div {
+	color: white;
+	margin: auto;	
+}
+
+.icon-grid img {
+	width: 100px;
+	height: 100px;
+	display:inline-block;
+}
+
+table {
+	padding: 100px 0;
+	border-radius: 30px;
+	background-color: #FEE3D4;
+}
+
+td a {
+	color: purple;
+}
+
+td {
+	color: black;
+	font-size: 34px;
+	padding: 20px 100px;
+}
+
+.col-xs-4 {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.row .col-md-4{
+	padding: 10px 0;
+	text-align: center;
+	margin: 0;
+}
+
+#contact {
+	font-family: 'superhelio _regular', sans-serif;
+	display: absolute;
+	align-items: center;
+	justify-content: center;
+	max-width: 1520px;
+	margin: 200px auto;
+}
+
+.container {
+	background-color: #FEE3D4;
+	font-size: 22px;
+	padding: 20px 0;
+}
+	</style>
 </head>
 
 <body>
@@ -204,5 +398,32 @@
 			</div>
 		</div>
 	</div>
+	
+	<script>
+	function habitDetails(b){
+		var x1 = document.getElementById("description1");
+		var x2 = document.getElementById("description2");
+		var x3 = document.getElementById("description3");	
+			
+		if (b.id == 1) {
+			if(x1.style.visibility === "hidden")	
+				x1.style.visibility = "visible";
+			else
+				x1.style.visibility = "hidden";
+		}
+		if (b.id == 2) {
+			if(x2.style.visibility === "hidden")	
+				x2.style.visibility = "visible";
+			else
+				x2.style.visibility = "hidden";
+		}
+		if (b.id == 3) {
+			if(x3.style.visibility === "hidden")	
+				x3.style.visibility = "visible";
+			else
+				x3.style.visibility = "hidden";
+		}
+	}
+	</script>
 </body>
 </html>
