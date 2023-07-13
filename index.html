@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Minh Quan Nguyen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Index.css">
+	<link href="https://fonts.cdnfonts.com/css/fipps" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/superhelio" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<script src="index.js"></script>
+	<script src="//use.edgefonts.net/changa-one.js"></script>
+</head>
+
+<body>
+	<!-- Navigation bar -->
+	<div class="container-fluid">
+		<div class="navbar sticky-top" style="padding: 20px 0;">
+			<a class="active" href="">Homepage</a>
+			<a href="#about"> About me</a>
+			<a href="#projects">Projects</a>
+			<a href="#skill">Skill</a>
+			<a href="#contact">Contact</a>
+		</div>
+		<div id="content">
+			<!-- Welcome text -->
+			<div class="first-content">
+				<div class="pikachu-gif">
+					<img src="src/waving-pikachu.gif" alt="Waving-pikachu">
+				</div> 
+				<h1>Welcome to my digital resume!</h1>
+			</div>
+			
+			<!-- About me -->
+			<div id="about">
+				<div class="grid-container">
+				  <div class="photo"><img src="src/mario.jpg" alt="My Photo"></div>
+				  <div class="about-content">
+					<h2>About Me</h2>
+					<p>I am a passionate and hard-working person.</p>
+					<div class="habit">
+						<h2>My Habit</h2>
+						<div class="habit-container">
+							<div><img src="src/music.jpg" alt="Music" onclick="habitDetails(this)" id="1"></div>
+							<div><img src="src/unity.png" alt="Unity" onclick="habitDetails(this)" id="2"></div>
+							<div><img src="src/skill_icon.png" alt="Skill" onclick="habitDetails(this)" id="3"></div>
+							<div id="description1" style="visibility:hidden;"><h3>Listening Music</h3></div>
+							<div id="description2" style="visibility:hidden;"><h3>Making Game</h3></div>
+							<div id="description3" style="visibility:hidden;"><h3>Learning New Skills</h3></div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			
+			<!-- My projects  -->
+			<div id="projects">
+			<h1 style="color:#FEE3D4">MY PROJECTS</h1><br>
+				<!-- My projects for Desktop Screen -->
+				<div class="d-none d-lg-block">
+					<div class="project1 proj-left">
+						<div><img src="src/catch-the-ball.jfif" alt="Catch-the-ball" style="width:85%"></div>
+						<div>
+							<h2>BALL CATCHING</h2>
+							<p>My first project which I really enjoyed doing it when studying Processing language.</p>
+							<p>Language: Java</p>
+						</div>
+					</div>
+					<hr>
+					<div class="project2 proj-right">
+						<div style="padding-right:70px;text-align:right;">
+							<h2>PONG GAME</h2>
+							<p>As I love making video games, I started learning C# to make my own games. 
+							I used Unity as a game engine to build this game.</p>
+							<p>Language: C#</p>
+						</div>
+						<div><img src="src/Pong-game.png" alt="Pong-game" style="width:auto; height:auto;"></div>
+					</div>
+					<hr>
+					<div class="project3 proj-left">
+						<div><img src="src/tictactoe.jpg" alt="Tictactoe" style="width:auto; height:auto;"></div>
+						<div>
+							<h2>Tic Tac Toe</h2>
+							<p>To continue my mini-game series, I made a common game: Tictactoe. 
+							This is also a two-player game.</p>
+							<p>Language: C#</p>
+						</div>
+					</div>
+					<hr>
+					<div class="project4 proj-right">
+						<div style="padding-right:70px;text-align:right;">
+							<h2>AimMaster (Coming Soon)</h2>
+							<p>After getting used to Unity, I am trying to make a 3D game 
+							and this game will help some FPS players improve their aims through
+							many tasks and statistics. This game is still in process</p>
+							<p>Language: C#</p>
+						</div>
+						<div><img src="src/aimlab.jpg" alt="Aimlab"></div>
+					</div>
+				</div>
+				<!-- My projects for Mobile Screen -->
+				<div class="d-md-block d-lg-none">
+					<div class="project1">
+						<h2>BALL CATCHING</h2>
+						<img src="src/catch-the-ball.jfif" alt="Catch-the-ball" style="max-width:500px; max-height:300px;">
+						<p>My first project which I really enjoyed doing it when studying Processing language.</p>
+						<p>Language: Processing</p>	
+					</div>
+					<hr>
+					<div class="project2">
+						<h2>PONG GAME</h2>
+						<img src="src/Pong-game.png" alt="Pong-game" style="width:auto; height:auto;">
+						<p>As I love making video games, I started learning C# to make my own games. 
+						I used Unity as a game engine to build this game.</p>
+						<p>Language: C#</p>
+					</div>
+					<hr>
+					<div class="project3">
+						<h2>Tic Tac Toe</h2>
+						<img src="src/tictactoe.jpg" alt="Tictactoe" style="width:auto; height:auto;">
+						<p>To continue my mini-game series, I made a common game: Tictactoe. 
+						This is also a two-player game.</p>
+						<p>Language: C#</p>
+					</div>
+					<hr>
+					<div class="project4">
+						<h2>AimMaster (Coming Soon)</h2>
+						<img src="src/aimlab.jpg" alt="Aimlab" style="max-width:500px; max-height:400px;">
+						<p>After getting used to Unity, I am trying to make a 3D game 
+						and this game will help some FPS players improve their aims through
+						many tasks and statistics. This game is still in process</p>
+						<p>Language: C#</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- My skills -->
+			<div id="skill">
+				<h1>MY SKILL</h1>
+				<div class="icon-grid">
+					<div><img src="src/html5.png" alt="HTML5" style="width:100px;height:100px;"></div>
+					<div><img src="src/css3.png" alt="CSS3" style="width:80px;height:100px;"></div>
+					<div><img src="src/postgresql.png" alt="PostgreSQL" style="width:100px;height:100px;"></div>
+				</div>
+				<div class="icon-grid">
+					<div>HTML5</div>
+					<div>CSS3</div>
+					<div>POSTGRESQL</div>
+				</div>
+				<div class="icon-grid">
+					<div><img src="src/csharp.png" alt="Csharp" style="width:100px;height:100px;"></div>
+					<div><img src="src/Processing.svg" alt="Processing" style="width:100px;height:100px;"></div>
+					<div><img src="src/r.png" alt="R" style="width:100px;height:100px;"></div>
+				</div>
+				<div class="icon-grid">
+					<div>C#</div>
+					<div>PROCESSING</div>
+					<div>R</div>
+				</div>
+				<div class="icon-grid">
+					<div><img src="src/java.png" alt="Java" style="width:100px;height:100px;"></div>
+					<div><img src="src/swift.png" alt="Swift" style="width:100px;height:100px;"></div>
+					<div><img src="src/python.png" alt="Python" style="width:100px;height:100px;"></div>
+				</div>
+				<div class="icon-grid">
+					<div>JAVA</div>
+					<div>SWIFT</div>
+					<div>PYTHON</div>
+				</div>
+				<br>
+				<h1>SKILL LEARNING</h1>
+				<div class="icon-grid">
+					<div><img src="src/c.png" alt="C" style="width:100px;height:100px;"></div>
+					<div></div>
+					<div></div>
+					<div>C</div>
+				</div>
+			</div>
+			
+			<!-- My contact -->
+			<div id="contact">
+				<h1 style="color:#FEE3D4;">MY CONTACT</h1>
+				<div class="container">
+					<div class="col-sm-4 col-lg-5">
+						<div class="row-sm-3">
+							Contact me via
+						</div>
+					</div>
+					<div class="col-sm-4 col-lg-5">
+						<div class="row-sm-3">
+							<img src="src/github.png" alt="Github" style="width:30px; height:30px">
+							<a href="https://github.com/itsMian">Github:</a> itsMian
+						</div>
+						<div class="row-sm-3">
+							<img src="src/linkedin.png" alt="LinkedIn" style="width:30px; height:30px">
+							<a href="https://www.linkedin.com/in/itsmian/">Linkedin:</a> Minh Quan Nguyen
+						</div>
+						<div class="row-sm-3">
+							<img src="src/email.jpg" alt="Email" style="width:30px; height:30px">
+							<a href="mailto: nguyenminhquan9801@gmail.com">Email:</a> nguyenminhquan9801@gmail.com
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
